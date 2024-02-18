@@ -1,0 +1,105 @@
+body{
+    background-color: yellow;
+    margin: 0px;
+}
+header{
+    background-color: white;
+    border: solid black 2px; 
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    ;
+}
+.container0{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 50px;
+    grid-template-areas: 
+    "title1 title2 title3"
+    "title4 title5 title6";
+}
+a{
+    text-decoration: none;
+    padding: 5%;
+}   
+p{
+    margin: 5%;
+}
+h1{
+    margin: 5%;
+    text-align: center;
+}
+#title1{
+    border: solid black 1px;
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: title1;
+}
+#title2{
+    border: solid black 1px;
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: title2;
+}
+#title3{
+    border: solid black 1px;
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: title3;
+}
+#title4{
+    border: solid black 1px;
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: title4;
+}
+#title5{
+    border: solid black 1px;
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: title5;
+}
+#title6{
+    border: solid black 1px;
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: title6;
+}
+@media screen and (max-width: 900px){
+    .container0{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+    grid-template-areas:
+    "title1"
+    "title2"
+    "title3"
+    "title4"
+    "title5"
+    "title6"
+    ;
+    }
+}
